@@ -1,0 +1,30 @@
+.section {
+  background-color: $grey-lightest;
+  width: 100vw;
+  height: 100%;
+  padding-bottom: 100px;
+
+  .projects {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+
+    .title-top {
+      text-align: center;
+      padding-top: 20px;
+      @include title;
+      color: black;
+      font-size: 2rem;
+      transform: translateX(200%);
+    }
+
+    .underline {
+      text-align: center;
+      color: transparent;
+      text-decoration: underline;
+      text-decoration-color: black;
+      padding-bottom: 20px;
+      transform: translateX(-200%);
+    }
+  }
+}

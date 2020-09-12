@@ -1,0 +1,61 @@
+@mixin center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+@mixin image-gallery {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+@mixin image-one {
+  background: url("/images/wiplay.png");
+  @include image-gallery;
+}
+
+@mixin image-two {
+  background: url("/images/senzu.png");
+  @include image-gallery;
+}
+
+@mixin image-three {
+  background: url("/images/tutoriels.png");
+  @include image-gallery;
+}
+
+@mixin image-four {
+  background: url("/images/funnyshop.png");
+  @include image-gallery;
+}
+
+@mixin image-five {
+  background: url("/images/sumi.png");
+  @include image-gallery;
+}
+
+@mixin image-six {
+  background: url("/images/eventeam.png");
+  @include image-gallery;
+}
+
+@mixin image-seven {
+  background: url("/images/solfege.png");
+  @include image-gallery;
+}
+
+.hide {
+  display: none !important;
+}

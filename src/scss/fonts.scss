@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:ital,wght@1,200&family=Open+Sans&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+
+@mixin Lato {
+  font-family: "Lato", sans-serif;
+}
+@mixin MontSerrat {
+  font-family: "Montserrat", sans-serif;
+}
+@mixin OpenSans {
+  font-family: "Open Sans", sans-serif;
+}
+@mixin Roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+@mixin Raleway {
+  font-family: "Raleway", sans-serif;
+}
+
+@mixin fw2 {
+  font-weight: 200;
+}
+
+@mixin fw4 {
+  font-weight: 400;
+}
+
+@mixin fw6 {
+  font-weight: 600;
+}
+
+@mixin title {
+  @include Raleway;
+  text-align: center;
+  font-weight: bold;
+  color: $grey-light;
+}
+
+@mixin light-text {
+  @include Raleway;
+  font-weight: 400;
+  font-size: 8pt;
+  color: $grey-light;
+}

@@ -1,0 +1,80 @@
+.header {
+  height: 100vh;
+  width: 100vw;
+  background-color: $black-light;
+
+  .section {
+    height: 100vh;
+    width: 100vw;
+
+    .text-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      @include Raleway;
+      width: 80%;
+
+      .text {
+        font-size: 16pt;
+        line-height: 1.2;
+
+        span {
+          color: $red;
+          font-weight: bold;
+        }
+      }
+
+      .box {
+        padding-top: 30px;
+        height: 100px;
+
+        :nth-child(2) {
+          animation-delay: 0.2s;
+        }
+        :nth-child(3) {
+          animation-delay: 0.4s;
+        }
+
+        span {
+          display: block;
+          width: 20px;
+          height: 20px;
+          border-bottom: 1px solid white;
+          border-right: 1px solid white;
+          transform: rotate(45deg);
+          animation: scrollAnimation 2s infinite;
+          margin: -10px;
+        }
+
+        @keyframes scrollAnimation {
+          0% {
+            opacity: 0;
+            transform: rotate(45deg) translate(-20px, -20px);
+          }
+          50% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0;
+            transform: rotate(45deg) translate(20px, 20px);
+          }
+        }
+      }
+    }
+  }
+}
+
+.parallax {
+  position: absolute;
+
+  .img {
+    opacity: 0.9;
+  }
+
+  .text-wrapper {
+    @include center;
+    color: white;
+  }
+}
