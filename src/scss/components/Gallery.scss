@@ -6,12 +6,16 @@
   justify-content: center;
 
   .box {
-    height: 260px;
-    width: 290px;
+    height: 360px;
+    width: 390px;
     position: relative;
 
     @include s-d {
-      width: 80%;
+      width: 70%;
+    }
+
+    @include xs-d {
+      width: 100%;
     }
 
     .card {
@@ -77,24 +81,31 @@
 
 .gallery {
   :nth-child(1) > .card {
-    @include image-one;
+    background: url("/images/wiplay.png");
+    @include image-gallery;
   }
   :nth-child(2) > .card {
-    @include image-two;
+    background: url("/images/tutoriels.png");
+    @include image-gallery;
   }
   :nth-child(3) > .card {
-    @include image-three;
+    background: url("/images/ettitude.png");
+    @include image-gallery;
   }
   :nth-child(4) > .card {
-    @include image-four;
+    background: url("/images/sumi.png");
+    @include image-gallery;
   }
   :nth-child(5) > .card {
-    @include image-five;
+    background: url("/images/senzu.png");
+    @include image-gallery;
   }
   :nth-child(6) > .card {
-    @include image-six;
+    background: url("/images/eventeam.png");
+    @include image-gallery;
   }
   :nth-child(7) > .card {
-    @include image-seven;
+    background: url("/images/funnyshop.png");
+    @include image-gallery;
   }
 }

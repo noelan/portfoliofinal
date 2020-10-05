@@ -35,7 +35,7 @@ const Projects = () => {
         <div className="projects">
           <div className="title-container" ref={titleContainer}>
             <div className="title-top" ref={title}>
-              Projects
+              Projets
             </div>
             <div className="underline" ref={underline}>
               salut salut salut salut

@@ -6,7 +6,8 @@ const Modal = forwardRef((props, ref) => {
   const [display, setDisplay] = React.useState(false);
   let modal = document.getElementById("modal-root");
 
-  const { title, image, subtext, paragraph, mission } = props.data;
+  const { title, image, subtext, paragraph, mission, href } = props.data;
+  console.log(image);
 
   useImperativeHandle(ref, () => {
     return {
@@ -41,9 +42,17 @@ const Modal = forwardRef((props, ref) => {
       <div className={"modal-wrapper"} ref={modal}>
         <div onClick={close} className={"modal-backdrop"} />
         <div className={"modal-box"}>
-          <div className="img-container">
-            <img src={window.location.origin + "/images/" + image} alt="" />
-          </div>
+          {(href && (
+            <a target="_blank" rel="noopener noreferrer" href={href}>
+              <div className="img-container">
+                <img src={window.location.origin + "/images/" + image} alt="" />
+              </div>
+            </a>
+          )) || (
+            <div className="img-container">
+              <img src={window.location.origin + "/images/" + image} alt="" />
+            </div>
+          )}
           <div className="text-container">
             <div className="title">
               {title} | <span className="sub-text">{subtext}</span>
@@ -53,7 +62,18 @@ const Modal = forwardRef((props, ref) => {
             <div className="description">{paragraph}</div>
           </div>
           {/* <h1>{props.data.title}</h1> */}
+
           <div className="close" onClick={close}></div>
+
+          {href && (
+            <a target="_blank" rel="noopener noreferrer" href={href}>
+              <div className="go-to">Voir le site</div>
+              <span className="sorry">
+                Désolé le premier chargement est long le site étant hébergé
+                gratuitement.
+              </span>
+            </a>
+          )}
         </div>
       </div>,
       document.getElementById("modal-root")

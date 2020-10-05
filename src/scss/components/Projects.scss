@@ -9,6 +9,14 @@
     height: 100%;
     margin: auto;
 
+    @include s-d {
+      width: 90%;
+    }
+
+    @include xs-d {
+      width: 100%;
+    }
+
     .title-top {
       text-align: center;
       padding-top: 20px;

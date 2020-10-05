@@ -21,21 +21,35 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 400px;
-  width: 330px;
+  height: 600px;
+  width: 530px;
+  max-width: 530px;
+  min-height: 600px;
   overflow-y: auto;
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   z-index: 101;
 
+  @include s-d {
+    width: 100%;
+    height: 50%;
+  }
+
+  @include xs-d {
+    width: 100%;
+    height: 100%;
+  }
+
   .img-container {
     width: 100%;
     height: 65%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      object-position: 0 0;
     }
   }
 
@@ -51,14 +65,14 @@
     .sub-text {
       color: $grey;
       font-weight: bold;
-      font-size: 7pt;
+      font-size: $main-s;
       padding-bottom: 6px;
-      text-transform: uppercase;
+
       @include Lato;
     }
 
     .mission {
-      font-size: 7pt;
+      font-size: $sub-s + 2;
       color: $red;
       font-weight: 400;
       padding-bottom: 6px;
@@ -67,18 +81,51 @@
       padding: 6px 0px;
       @include Raleway;
       color: $grey-light;
-      font-size: 8pt;
+      font-size: $main-s - 1;
       border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .go-to {
+    position: absolute;
+    left: 20px;
+    bottom: 30px;
+    color: $red;
+
+    @include xs-d {
+      bottom: 50px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+
+  .sorry {
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    color: $red;
+    color: black;
+    font-size: $sub-s;
+
+    @include xs-d {
+      bottom: 20px;
     }
   }
 
   .close {
     position: absolute;
     right: 32px;
-    bottom: 20px;
+    bottom: 35px;
     width: 12px;
     height: 12px;
-    opacity: 0.3;
+    opacity: 0.6;
+
+    @include xs-d {
+      bottom: 55px;
+    }
   }
   .close:hover {
     opacity: 1;
@@ -87,12 +134,11 @@
   .close:before,
   .close:after {
     position: absolute;
-
     left: 15px;
     content: " ";
     height: 20px;
     width: 2px;
-    background-color: #333;
+    background-color: $red;
   }
   .close:before {
     transform: rotate(45deg);

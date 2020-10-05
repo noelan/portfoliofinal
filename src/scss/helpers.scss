@@ -21,41 +21,6 @@
   width: 100%;
 }
 
-@mixin image-one {
-  background: url("/images/wiplay.png");
-  @include image-gallery;
-}
-
-@mixin image-two {
-  background: url("/images/senzu.png");
-  @include image-gallery;
-}
-
-@mixin image-three {
-  background: url("/images/tutoriels.png");
-  @include image-gallery;
-}
-
-@mixin image-four {
-  background: url("/images/funnyshop.png");
-  @include image-gallery;
-}
-
-@mixin image-five {
-  background: url("/images/sumi.png");
-  @include image-gallery;
-}
-
-@mixin image-six {
-  background: url("/images/eventeam.png");
-  @include image-gallery;
-}
-
-@mixin image-seven {
-  background: url("/images/solfege.png");
-  @include image-gallery;
-}
-
 .hide {
   display: none !important;
 }

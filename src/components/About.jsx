@@ -92,7 +92,7 @@ const About = () => {
         <div className="about " id="about">
           <div className="title-container" ref={titleContainer}>
             <div className="title-top" ref={title}>
-              ABOUT
+              À propos
             </div>
             <div className="underline" ref={underline}>
               salut salut salut salut
@@ -100,6 +100,7 @@ const About = () => {
           </div>
 
           {/* Svg */}
+
           <div className="flex" ref={upperPart}>
             <div className="col">
               <div className="logo" ref={logo1}>
@@ -151,7 +152,7 @@ const About = () => {
               <div className="sub-text">
                 Bonjour je suis Noël an je suis développeur web junior. J'ai
                 effectué une formation de développeur web à la Wild Code School
-                et j'ai pu effectuer quelque stage, je suis à l'écoute
+                et j'ai pu effectuer quelques stages, je suis à l'écoute
                 d'opportunité.
               </div>
             </div>

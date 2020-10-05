@@ -37,6 +37,7 @@
   text-align: center;
   font-weight: bold;
   color: $grey-light;
+  font-size: $title-s;
 }
 
 @mixin light-text {
@@ -45,3 +46,7 @@
   font-size: 8pt;
   color: $grey-light;
 }
+
+$title-s: 18pt;
+$main-s: 12pt;
+$sub-s: 8pt;
