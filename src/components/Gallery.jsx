@@ -25,10 +25,22 @@ const Gallery = () => {
         <div className="box">
           <div className="card"></div>
           <div className="text">
+            <p>Finalcad</p>
+            <p className="sub-text">React/Redux/Javascript</p>
+          </div>
+          <div className="toggle-modal" onClick={openModal} value="1">
+            En savoir plus
+          </div>
+        </div>
+
+        {/* Card  */}
+        <div className="box">
+          <div className="card"></div>
+          <div className="text">
             <p>Wiplay</p>
             <p className="sub-text">Javascript/Front-End/Drupal</p>
           </div>
-          <div className="toggle-modal" onClick={openModal} value="1">
+          <div className="toggle-modal" onClick={openModal} value="2">
             En savoir plus
           </div>
         </div>
@@ -40,7 +52,7 @@ const Gallery = () => {
             <p>Tutoriels book</p>
             <p className="sub-text">React/Api Platform/Symfony</p>
           </div>
-          <div className="toggle-modal" onClick={openModal} value="2">
+          <div className="toggle-modal" onClick={openModal} value="3">
             En savoir plus
           </div>
         </div>
@@ -52,7 +64,7 @@ const Gallery = () => {
             <p>Serenity Shop</p>
             <p className="sub-text">React/Api Platform/Symfony</p>
           </div>
-          <div className="toggle-modal" onClick={openModal} value="3">
+          <div className="toggle-modal" onClick={openModal} value="4">
             En savoir plus
           </div>
         </div>
@@ -64,7 +76,7 @@ const Gallery = () => {
             <p>Sumi</p>
             <p className="sub-text">React</p>
           </div>
-          <div className="toggle-modal" onClick={openModal} value="4">
+          <div className="toggle-modal" onClick={openModal} value="5">
             En savoir plus
           </div>
         </div>
@@ -76,7 +88,7 @@ const Gallery = () => {
             <p>Senzu</p>
             <p className="sub-text">Android Studio/Java</p>
           </div>
-          <div className="toggle-modal" onClick={openModal} value="5">
+          <div className="toggle-modal" onClick={openModal} value="6">
             En savoir plus
           </div>
         </div>
@@ -88,7 +100,7 @@ const Gallery = () => {
             <p>Event team</p>
             <p className="sub-text">PHP/Srum/Git/Javscript</p>
           </div>
-          <div className="toggle-modal" onClick={openModal} value="6">
+          <div className="toggle-modal" onClick={openModal} value="7">
             En savoir plus
           </div>
         </div>

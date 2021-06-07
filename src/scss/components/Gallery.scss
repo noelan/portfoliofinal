@@ -81,30 +81,34 @@
 
 .gallery {
   :nth-child(1) > .card {
-    background: url("/images/wiplay.png");
+    background: url("/images/finalcad.png");
     @include image-gallery;
   }
   :nth-child(2) > .card {
-    background: url("/images/tutoriels.png");
+    background: url("/images/wiplay.png");
     @include image-gallery;
   }
   :nth-child(3) > .card {
-    background: url("/images/ettitude.png");
+    background: url("/images/tutoriels.png");
     @include image-gallery;
   }
   :nth-child(4) > .card {
-    background: url("/images/sumi.png");
+    background: url("/images/ettitude.png");
     @include image-gallery;
   }
   :nth-child(5) > .card {
-    background: url("/images/senzu.png");
+    background: url("/images/sumi.png");
     @include image-gallery;
   }
   :nth-child(6) > .card {
-    background: url("/images/eventeam.png");
+    background: url("/images/senzu.png");
     @include image-gallery;
   }
   :nth-child(7) > .card {
+    background: url("/images/eventeam.png");
+    @include image-gallery;
+  }
+  :nth-child(8) > .card {
     background: url("/images/funnyshop.png");
     @include image-gallery;
   }
